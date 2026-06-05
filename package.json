@@ -9,9 +9,9 @@
     "build": "electron-vite build",
     "preview": "electron-vite preview",
     "start": "electron-vite preview",
-    "package:win": "electron-vite build && electron-builder --win --x64",
-    "package:mac": "electron-vite build && electron-builder --mac",
-    "package:all": "electron-vite build && electron-builder -mw"
+    "package:win": "electron-vite build && electron-builder --win --x64 --publish never",
+    "package:mac": "electron-vite build && electron-builder --mac --publish never",
+    "package:all": "electron-vite build && electron-builder -mw --publish never"
   },
   "dependencies": {
     "@codemirror/lang-java": "^6.0.1",

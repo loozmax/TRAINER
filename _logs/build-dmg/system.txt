@@ -1,0 +1,8 @@
+2026-06-05T19:50:47.7910000Z Evaluating build-dmg.if
+2026-06-05T19:50:47.7910000Z Evaluating: success()
+2026-06-05T19:50:47.7910000Z Result: true
+2026-06-05T19:50:47.7940000Z Requested labels: macos-latest
+2026-06-05T19:50:47.7940000Z Job defined at: loozmax/TRAINER/.github/workflows/build-mac.yml@refs/tags/v1.0.0
+2026-06-05T19:50:47.7940000Z Waiting for a runner to pick up this job...
+2026-06-05T19:50:48.7880000Z Job is waiting for a hosted runner to come online.
+2026-06-05T19:50:48.7880000Z Job is about to start running on the hosted runner: GitHub Actions 1000000000

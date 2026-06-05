@@ -1,0 +1,50 @@
+﻿2026-06-05T19:51:10.2874940Z ##[group]Run npm run package:mac
+2026-06-05T19:51:10.2875500Z [36;1mnpm run package:mac[0m
+2026-06-05T19:51:10.2926700Z shell: /bin/bash -e {0}
+2026-06-05T19:51:10.2926950Z env:
+2026-06-05T19:51:10.2927190Z   CSC_IDENTITY_AUTO_DISCOVERY: false
+2026-06-05T19:51:10.2927450Z ##[endgroup]
+2026-06-05T19:51:10.4496400Z 
+2026-06-05T19:51:10.4497030Z > java-trainer@1.0.0 package:mac
+2026-06-05T19:51:10.4497540Z > electron-vite build && electron-builder --mac
+2026-06-05T19:51:10.4501760Z 
+2026-06-05T19:51:10.7914450Z [36mvite v5.4.21 [32mbuilding SSR bundle for production...[36m[39m
+2026-06-05T19:51:11.1684710Z transforming...
+2026-06-05T19:51:11.1953570Z [32m✓[39m 2 modules transformed.
+2026-06-05T19:51:11.2075760Z rendering chunks...
+2026-06-05T19:51:11.2130410Z [2mout/main/[22m[36mindex.js  [39m[1m[2m4.73 kB[22m[1m[22m
+2026-06-05T19:51:11.2132620Z [32m✓ built in 403ms[39m
+2026-06-05T19:51:11.2148960Z [36mvite v5.4.21 [32mbuilding SSR bundle for production...[36m[39m
+2026-06-05T19:51:11.2163850Z transforming...
+2026-06-05T19:51:11.2180870Z [32m✓[39m 1 modules transformed.
+2026-06-05T19:51:11.2235110Z rendering chunks...
+2026-06-05T19:51:11.2241540Z [2mout/preload/[22m[36mindex.js  [39m[1m[2m0.42 kB[22m[1m[22m
+2026-06-05T19:51:11.2245240Z [32m✓ built in 6ms[39m
+2026-06-05T19:51:11.2246490Z [36mvite v5.4.21 [32mbuilding for production...[36m[39m
+2026-06-05T19:51:11.2376540Z transforming...
+2026-06-05T19:51:14.3217400Z [32m✓[39m 1980 modules transformed.
+2026-06-05T19:51:14.7338170Z rendering chunks...
+2026-06-05T19:51:14.7501890Z [2m../../out/renderer/[22m[32mindex.html                 [39m[1m[2m    0.59 kB[22m[1m[22m
+2026-06-05T19:51:14.7503400Z [2m../../out/renderer/[22m[2massets/[22m[35mindex-OzaRtcBN.css  [39m[1m[2m   25.85 kB[22m[1m[22m
+2026-06-05T19:51:14.7504330Z [2m../../out/renderer/[22m[2massets/[22m[36mindex-C28gdvJ5.js   [39m[1m[33m1,587.96 kB[39m[22m
+2026-06-05T19:51:14.7505040Z [32m✓ built in 3.53s[39m
+2026-06-05T19:51:15.3841160Z   • electron-builder  version=24.13.3 os=24.6.0
+2026-06-05T19:51:15.3843560Z   • artifacts will be published  reason=tag is defined tag=v1.0.0
+2026-06-05T19:51:15.3907570Z   • loaded configuration  file=package.json ("build" field)
+2026-06-05T19:51:15.6472420Z   • packaging       platform=darwin arch=arm64 electron=31.7.7 appOutDir=release/mac-arm64
+2026-06-05T19:51:16.1196510Z   • downloading     url=https://github.com/electron/electron/releases/download/v31.7.7/electron-v31.7.7-darwin-arm64.zip size=97 MB parts=6
+2026-06-05T19:51:16.5936780Z   • downloaded      url=https://github.com/electron/electron/releases/download/v31.7.7/electron-v31.7.7-darwin-arm64.zip duration=932ms
+2026-06-05T19:51:21.0172680Z   • default Electron icon is used  reason=application icon is not set
+2026-06-05T19:51:21.0454400Z   • skipped macOS code signing  reason=identity explicitly is set to null
+2026-06-05T19:51:21.0460800Z   • building        target=DMG arch=arm64 file=release/Java Trainer-1.0.0-arm64.dmg
+2026-06-05T19:51:21.0496920Z   • Detected arm64 process, HFS+ is unavailable. Creating dmg with APFS - supports Mac OSX 10.12+
+2026-06-05T19:51:21.0579330Z   • packaging       platform=darwin arch=x64 electron=31.7.7 appOutDir=release/mac
+2026-06-05T19:51:21.4139920Z   • downloading     url=https://github.com/electron/electron/releases/download/v31.7.7/electron-v31.7.7-darwin-x64.zip size=103 MB parts=6
+2026-06-05T19:51:22.0081170Z   • downloaded      url=https://github.com/electron/electron/releases/download/v31.7.7/electron-v31.7.7-darwin-x64.zip duration=933ms
+2026-06-05T19:51:25.9115970Z   • skipped macOS code signing  reason=identity explicitly is set to null
+2026-06-05T19:51:25.9118080Z   • building        target=DMG arch=x64 file=release/Java Trainer-1.0.0.dmg
+2026-06-05T19:51:25.9119170Z   • Detected arm64 process, HFS+ is unavailable. Creating dmg with APFS - supports Mac OSX 10.12+
+2026-06-05T19:51:39.0981460Z   • building block map  blockMapFile=release/Java Trainer-1.0.0-arm64.dmg.blockmap
+2026-06-05T19:51:47.1053260Z   • building block map  blockMapFile=release/Java Trainer-1.0.0.dmg.blockmap
+2026-06-05T19:51:48.1334400Z   ⨯ GitHub Personal Access Token is not set, neither programmatically, nor using env "GH_TOKEN"
+2026-06-05T19:51:48.1741260Z ##[error]Process completed with exit code 1.

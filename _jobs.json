@@ -1,0 +1,113 @@
+{
+  "total_count": 1,
+  "jobs": [
+    {
+      "id": 79802354675,
+      "run_id": 27036683001,
+      "workflow_name": "Build macOS .dmg",
+      "head_branch": "v1.0.0",
+      "run_url": "https://api.github.com/repos/loozmax/TRAINER/actions/runs/27036683001",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOSyUF288AAAASlJdL8w",
+      "head_sha": "5c9ff4846dc8746c9c0a212bf52bdc1634ef40e6",
+      "url": "https://api.github.com/repos/loozmax/TRAINER/actions/jobs/79802354675",
+      "html_url": "https://github.com/loozmax/TRAINER/actions/runs/27036683001/job/79802354675",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-06-05T19:50:47Z",
+      "started_at": "2026-06-05T19:50:51Z",
+      "completed_at": "2026-06-05T19:51:53Z",
+      "name": "build-dmg",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-06-05T19:50:51Z",
+          "completed_at": "2026-06-05T19:50:53Z"
+        },
+        {
+          "name": "Checkout",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-06-05T19:50:53Z",
+          "completed_at": "2026-06-05T19:50:54Z"
+        },
+        {
+          "name": "Setup Node.js",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-06-05T19:50:54Z",
+          "completed_at": "2026-06-05T19:51:00Z"
+        },
+        {
+          "name": "Install dependencies",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-06-05T19:51:00Z",
+          "completed_at": "2026-06-05T19:51:10Z"
+        },
+        {
+          "name": "Build .dmg (arm64 + x64)",
+          "status": "completed",
+          "conclusion": "failure",
+          "number": 5,
+          "started_at": "2026-06-05T19:51:10Z",
+          "completed_at": "2026-06-05T19:51:48Z"
+        },
+        {
+          "name": "Upload .dmg artifacts",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 6,
+          "started_at": "2026-06-05T19:51:48Z",
+          "completed_at": "2026-06-05T19:51:48Z"
+        },
+        {
+          "name": "Publish release",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 7,
+          "started_at": "2026-06-05T19:51:48Z",
+          "completed_at": "2026-06-05T19:51:48Z"
+        },
+        {
+          "name": "Post Setup Node.js",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 13,
+          "started_at": "2026-06-05T19:51:48Z",
+          "completed_at": "2026-06-05T19:51:48Z"
+        },
+        {
+          "name": "Post Checkout",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-06-05T19:51:48Z",
+          "completed_at": "2026-06-05T19:51:49Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-06-05T19:51:49Z",
+          "completed_at": "2026-06-05T19:51:49Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/loozmax/TRAINER/check-runs/79802354675",
+      "labels": [
+        "macos-latest"
+      ],
+      "runner_id": 1000000000,
+      "runner_name": "GitHub Actions 1000000000",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    }
+  ]
+}
