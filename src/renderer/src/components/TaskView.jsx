@@ -43,6 +43,7 @@ export default function TaskView({
   const [running, setRunning] = useState(false)
   const [lastAction, setLastAction] = useState(null) // 'check' | 'run'
   const [showSolution, setShowSolution] = useState(false)
+  const [savedCode, setSavedCode] = useState(null)
   const [hintCount, setHintCount] = useState(0)
   const [justSolved, setJustSolved] = useState(false)
 
@@ -55,6 +56,7 @@ export default function TaskView({
     setRunning(false)
     setLastAction(null)
     setShowSolution(false)
+    setSavedCode(null)
     setHintCount(0)
     setJustSolved(false)
   }, [task.id])
@@ -94,10 +96,16 @@ export default function TaskView({
   }
 
   function applySolution() {
+    setSavedCode(code)
     onChange(task.solution)
     setShowSolution(true)
     setResults(null)
     setRunResult(null)
+  }
+
+  function hideSolution() {
+    if (savedCode !== null) onChange(savedCode)
+    setShowSolution(false)
   }
 
   return (
@@ -215,9 +223,9 @@ export default function TaskView({
             </Button>
             <div className="flex-1" />
             {showSolution ? (
-              <Button variant="outline" onClick={() => setShowSolution(false)}>
+              <Button variant="outline" onClick={hideSolution}>
                 <EyeOff />
-                Скрыл решение
+                Скрыть решение
               </Button>
             ) : (
               <Button variant="soft" onClick={applySolution}>

@@ -1,8 +1,39 @@
-import { Coffee, Leaf, Database, Rocket, CheckCircle2, Circle, GraduationCap } from 'lucide-react'
+import {
+  Coffee,
+  Boxes,
+  Layers,
+  Filter,
+  Sigma,
+  ShieldAlert,
+  Server,
+  Leaf,
+  ShieldCheck,
+  Database,
+  Link2,
+  Search,
+  Rocket,
+  CheckCircle2,
+  Circle,
+  GraduationCap
+} from 'lucide-react'
 import { Progress } from './ui/progress'
 import { cn } from '@/lib/utils'
 
-const ICONS = { Coffee, Leaf, Database, Rocket }
+const ICONS = {
+  Coffee,
+  Boxes,
+  Layers,
+  Filter,
+  Sigma,
+  ShieldAlert,
+  Server,
+  Leaf,
+  ShieldCheck,
+  Database,
+  Link2,
+  Search,
+  Rocket
+}
 
 export default function Sidebar({ modules, progress, activeId, onSelect, totalSolved, totalCount }) {
   return (
@@ -31,12 +62,18 @@ export default function Sidebar({ modules, progress, activeId, onSelect, totalSo
       </div>
 
       {/* Список модулей */}
-      <nav className="flex-1 space-y-6 overflow-y-auto px-3 pb-6">
-        {modules.map((mod) => {
+      <nav className="flex-1 space-y-3 overflow-y-auto px-3 pb-6">
+        {modules.map((mod, i) => {
           const Icon = ICONS[mod.icon] || Coffee
           const solved = mod.tasks.filter((t) => progress[t.id]?.completed).length
+          const showArea = i === 0 || modules[i - 1].area !== mod.area
           return (
             <div key={mod.id}>
+              {showArea && (
+                <div className="px-2 pb-1 pt-3 text-[10px] font-bold uppercase tracking-widest text-muted-foreground/60">
+                  {mod.area}
+                </div>
+              )}
               <div className="mb-2 flex items-center gap-2.5 px-2">
                 <div
                   className="grid h-7 w-7 place-items-center rounded-md"
