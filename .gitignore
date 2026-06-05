@@ -4,3 +4,8 @@ release/
 dist/
 *.log
 .DS_Store
+
+# временные файлы диагностики
+_logs/
+_*.zip
+_*.json
